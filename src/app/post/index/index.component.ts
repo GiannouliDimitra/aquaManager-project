@@ -28,7 +28,7 @@ export class IndexComponent {
   deletePost(id:number){
     this.postService.deletePost(id).subscribe(res => {
          this.posts = this.posts.filter(item => item.id !== id);
-         alert('ιΤο Post διαγράφηκε με επιτυχία!')
+         alert('Το Post διαγράφηκε με επιτυχία!')
     })
   }
   

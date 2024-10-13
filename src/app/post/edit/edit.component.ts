@@ -44,7 +44,7 @@ export class EditComponent {
   submit() {
     console.log(this.form.value);
     this.postService.updatePost(this.id, this.form.value).subscribe((res: any) => {
-      alerr('Η τροποποίηση του post ολοκληρώθηκε με επιτυχία!');
+      alert('Η τροποποίηση του post ολοκληρώθηκε με επιτυχία!');
       this.router.navigateByUrl('post/index');
     });
   }
